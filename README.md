@@ -2,6 +2,8 @@
 
 NOTE: THIS IMAGE IS TO BE USED FOR TEST AND LEARNIGN PURPOSES ONLY! NOT TO BE USED IN A PRODUCTION ENVIRONMENT!
 
+Forked from mmumshad/ubuntu-ssh-enabled
+
 SSH Enabled Ubuntu Image for Test and Dev purposes ONLY!
 
 ## Use:
@@ -14,11 +16,15 @@ Linux:
 
 Windows:
 
-```docker run -d -P --name <container-name> theblackmini/ubuntu-ssh-enabled```
+```docker run -d -p <port-you-specify>:22 --name <container-name> theblackmini/ubuntu-ssh-enabled```
 
 Reveal the port number
 
 ```docker port <container-name>``` 
+
+Alternatively specify the port number yourself:
+
+```docker run -d -p <port-you-specify>:22 --name <container-name> theblackmini/ubuntu-ssh-enabled```
 
 Identify the Internal IP
 
