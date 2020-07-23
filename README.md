@@ -8,7 +8,17 @@ SSH Enabled Ubuntu Image for Test and Dev purposes ONLY!
 
 Run the container:
 
-```docker run -d mmumshad/ubuntu-ssh-enabled```
+Linux: 
+
+```docker run -d theblackmini/ubuntu-ssh-enabled```
+
+Windows:
+
+```docker run -d -P --name <container-name> theblackmini/ubuntu-ssh-enabled```
+
+Reveal the port number
+
+```docker port <container-name>``` 
 
 Identify the Internal IP
 
@@ -16,7 +26,13 @@ Identify the Internal IP
 
 SSH
 
+Linux:
+
 ```ssh <container-ip>```
+
+Windows:
+
+```ssh localhost:<container-port>```
 
 **Username:** root
 
